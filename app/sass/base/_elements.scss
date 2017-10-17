@@ -1,0 +1,26 @@
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + span, input[type="radio"] + span {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+  margin: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + span:before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 14px;
+  border: 0 solid rgb(0, 0, 0);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotateZ(45deg);
+  margin: -6px 3px;
+  pointer-events: none;
+}
