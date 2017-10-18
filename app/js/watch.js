@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    var watch = document.getElementById("watch");
     function digitalWatch() {
         var date = new Date();
         var day = date.getDay();
@@ -8,11 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var minutes = date.getMinutes();
         if (hours < 10) hours = "0" + hours;
         if (minutes < 10) minutes = "0" + minutes;
-        document.getElementById("watch").innerHTML = day+ '.' + month + '.' + year + ' ' + hours + ":" + minutes;
+        watch.innerHTML = day+ '.' + month + '.' + year + ' ' + hours + ":" + minutes;
     }
-    function clockStart() {
-        setInterval(digitalWatch, 1000);
-        digitalWatch();
+    if (watch) {
+        function clockStart() {
+            setInterval(digitalWatch, 1000);
+            digitalWatch();
+        }
+        clockStart();
     }
-    clockStart();
+
 });
