@@ -1,0 +1,113 @@
+.meteo {
+
+  table {
+    border-collapse: collapse;
+    width: max-content;
+    overflow: hidden;
+    border: 1px solid #d4d4d4;
+  }
+  th,td {
+    vertical-align: top;
+    padding: 3px 8px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  tr {
+    height: 30px;
+    border: 1px solid #d4d4d4;
+  }
+  th {
+    font-weight: 400;
+    background-color: #f2f2f2;
+    border: 1px solid #d4d4d4;
+  }
+  td {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+  }
+  thead {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  tbody {
+    tr {
+      background-color: #fff;
+      &:nth-of-type(2n+1) {
+        border-bottom: none;
+      }
+      &:nth-of-type(2n+2) {
+        border-top: none;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .mr-location {
+      font-style: italic;
+      font-size: 14px;
+    }
+  }
+
+  &-review {
+    .mr-pdk {
+      width: 120px;
+    }
+    .mr-post-control {
+      width: 220px;
+      text-align: left;
+    }
+    .mr-location {
+      width: 220px;
+      text-align: left;
+    }
+    .mr-time {
+      width: 120px;
+    }
+    .mr-photo-ico {
+      width: 50px;
+    }
+    .mr-weather-ico {
+      width: 50px;
+    }
+    .mr-fallout-type {
+      width: 80px;
+    }
+    .mr-fallout-sum {
+      width: 110px;
+    }
+    .mr-fallout-intensity {
+      width: 130px;
+    }
+    .mr-temp {
+      width: 80px;
+    }
+    .mr-dew {
+      width: 90px;
+    }
+    .mr-wet {
+      width: 70px;
+    }
+    .mr-pressure {
+      width: 80px;
+    }
+    .mr-wind-grd,
+    .mr-wind-ms {
+      width: 50px;
+    }
+    .mr-coating-compos {
+      width: 90px;
+    }
+    .mr-coating-c {
+      width: 70px;
+    }
+    .mr-ice {
+      width: 70px;
+    }
+  }
+
+}
