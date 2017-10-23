@@ -22,10 +22,7 @@
     border: 1px solid #d4d4d4;
   }
   td {
-    border-top: none;
-    border-bottom: none;
-    border-right: 1px solid #d4d4d4;
-    border-left: 1px solid #d4d4d4;
+    border: 1px solid #d4d4d4;
   }
   thead {
     img {
@@ -59,6 +56,12 @@
   }
 
   &-review {
+    td {
+      border-top: none;
+      border-bottom: none;
+      border-right: 1px solid #d4d4d4;
+      border-left: 1px solid #d4d4d4;
+    }
     .mr-pdk {
       width: 120px;
     }
@@ -114,5 +117,60 @@
       width: 70px;
     }
   }
-
+  &-archive {
+    tr {
+      &:hover {
+        background-color: #fdf8d1!important;
+      }
+    }
+    .ma-when {
+      width: 120px;
+    }
+    .ma-photo-ico {
+      width: 50px;
+    }
+    .ma-weather-ico {
+      width: 50px;
+    }
+    .ma-fallout-type {
+      width: 80px;
+    }
+    .ma-fallout-sum {
+      width: 110px;
+    }
+    .ma-fallout-intensity {
+      width: 130px;
+    }
+    .ma-temp {
+      width: 80px;
+    }
+    .ma-dew {
+      width: 90px;
+    }
+    .ma-wet {
+      width: 70px;
+    }
+    .ma-pressure {
+      width: 80px;
+    }
+    .ma-wind-grd,
+    .ma-wind-ms {
+      width: 100px;
+    }
+    .ma-coating-compos {
+      width: 90px;
+    }
+    .ma-coating-temp {
+      width: 100px;
+    }
+    .ma-coating-clutch {
+      width: 120px;
+    }
+    .ma-road-body-temp-min {
+      width: 120px;
+    }
+    .ma-road-body-temp-max {
+      width: 150px;
+    }
+  }
 }

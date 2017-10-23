@@ -30,13 +30,19 @@ main {
     background-color: #00447a;
 }
 section {
+    display:flex;
+    flex-direction: column;
     position: relative;
-    width: 100%;
+    width: calc(100% - 100px);
     margin: 20px 10px 10px;
+    height: calc(100% - 40px);
+}
+.table {
+    position: relative;
+    overflow: scroll;
+    height: 100%;
     border-top: 5px solid #00b0f0;
     padding-top: 5px;
-    overflow: scroll;
-    height: calc(100% - 40px);
 }
 
 a {

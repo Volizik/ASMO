@@ -24,3 +24,20 @@ input[type="checkbox"]:checked + span:before {
   margin: -6px 3px;
   pointer-events: none;
 }
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00b0f0;
+  color: #fff;
+  border: none;
+  margin: 6px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    color: #ffff00;
+  }
+}
