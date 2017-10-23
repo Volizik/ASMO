@@ -41,3 +41,22 @@ input[type="checkbox"]:checked + span:before {
     color: #ffff00;
   }
 }
+
+.filter {
+  width: 100%;
+  display: block;
+  margin: 3px 0;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #000;
+  background-color: #f3f3f3;
+  span {
+    margin: 0px 5px;
+  }
+  input[type="date"] {
+    border: 1px solid #2ebdf1;
+    box-sizing: border-box;
+    padding: 0px 10px;
+  }
+}
