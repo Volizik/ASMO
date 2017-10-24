@@ -173,4 +173,52 @@
       width: 150px;
     }
   }
+  &-forecast {
+    tr {
+      &:hover {
+        background-color: #fdf8d1!important;
+      }
+    }
+
+    .mf-when {
+      width: 120px;
+    }
+    .mf-weather-ico {
+      width: 50px;
+    }
+    .mf-fallout-type {
+      width: 80px;
+    }
+    .mf-fallout-sum {
+      width: 110px;
+    }
+    .mf-atmosphere-temp {
+      width: 130px;
+    }
+    .mf-atmosphere-dew {
+      width: 130px;
+    }
+    .mf-atmosphere-wet {
+      width: 250px;
+    }
+    .mf-atmosphere-pres {
+      width: 100px;
+    }
+    .mf-atmosphere-wind-grd,
+    .mf-atmosphere-wind-ms {
+      width: 100px;
+    }
+    .mf-road-compos {
+      width: 140px;
+    }
+    .mf-road-temp {
+      width: 140px;
+    }
+    .mf-cloudiness {
+      width: 100px;
+    }
+    .mf-fog {
+      width: 140px;
+    }
+  }
 }

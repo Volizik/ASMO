@@ -1,0 +1,394 @@
+<!-- start html_open.html-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--для масштабируемых моделей-->
+    <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <!--для немасштабируемых моделей-->
+    <meta name="viewport" content="width=1366">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- open .header -->
+<!-- end html_open.html-->
+
+<div class="app">
+<!-- start header.html-->
+<header class="header">
+
+    <div class="header__logo">
+        <span class="logo">Road Meter</span>
+        <sup class="status">/карта</sup>
+    </div>
+
+    <div class="header__time">
+        <span id="watch"></span>
+        <span class="elem"></span>
+    </div>
+
+</header>
+<!-- end header.html-->
+
+    <main>
+<!-- start sidebar.html-->
+<aside class="sidebar">
+    <ul>
+        <li><a href="#"><img src="img/icons/map.png" alt="map"></a></li>
+        <li><a href="#"><img src="img/icons/thermometer.png" alt="thermometer"></a></li>
+        <li><a href="#"><img src="img/icons/camera.png" alt="camera"></a></li>
+        <li><a href="#"><img src="img/icons/cars.png" alt="cars"></a></li>
+    </ul>
+</aside>
+<!-- end sidebar.html-->
+
+<!-- start meteo-forecast.html-->
+<section class="meteo meteo-forecast">
+<!-- start header-section.html-->
+<div class="s-header">
+    <div class="s-header__side">
+        <button class="btn btn-left"></button>
+        <button class="btn btn-right"></button>
+        <span>A151 км 35+700 Шихазаны</span>
+    </div>
+    <div class="s-header__side">
+        <button class="btn">Архив</button>
+        <button class="btn">Текущие</button>
+        <button class="btn">Прогноз</button>
+    </div>
+</div>
+<!-- end header-section.html-->
+    <div class="content">
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="2" class="mf-when">Время прогноза</th>
+                <th rowspan="2" class="mf-weather-ico"><img src="img/icons/table-weather-head.png" alt="weather"></th>
+                <th colspan="2" class="mf-fallout">Осадки</th>
+                <th colspan="6" class="mf-atmosphere">Атмосфера</th>
+                <th colspan="2" class="mf-road">Автодорога</th>
+                <th rowspan="2" class="mf-cloudiness">Облачность</th>
+                <th rowspan="2" class="mf-fog">Туман</th>
+            </tr>
+            <tr>
+                <th class="mf-fallout-type">Тип</th>
+                <th class="mf-fallout-sum">Сумма,мм</th>
+                <th class="mf-atmosphere-temp">Т возд., C</th>
+                <th class="mf-atmosphere-dew">Точка росы, С</th>
+                <th class="mf-atmosphere-press">Давл., гПа</th>
+                <th class="mf-atmosphere-wet">Влаж., %</th>
+                <th class="mf-atmosphere-wind-ms">Ветер, м/с</th>
+                <th class="mf-atmosphere-wind-grd">Ветер, грд</th>
+                <th class="mf-road-temp">Темп., С</th>
+                <th class="mf-road-compos">Сост</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            <tr>
+                <td class="mf-when">23.03.2017 11:44:26</td>
+                <td class="mf-weather-ico"><img src="img/icons/table-weather.png" alt=""></td>
+                <td class="mf-fallout-type"></td>
+                <td class="mf-fallout-sum"></td>
+                <td class="mf-atmosphere-temp">4.7</td>
+                <td class="mf-atmosphere-dew"></td>
+                <td class="mf-atmosphere-press">754</td>
+                <td class="mf-atmosphere-wet">64</td>
+                <td class="mf-atmosphere-wind-ms">2.84</td>
+                <td class="mf-atmosphere-wind-grd">233.88</td>
+                <td class="mf-road-temp">17.6</td>
+                <td class="mf-road-compos">Сухо</td>
+                <td class="mf-cloudiness"></td>
+                <td class="mf-fog"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<!-- end meteo-forecast.html-->
+    </main>
+
+</div>
+
+<!-- start html_close.html-->
+<script src='js/jquery-3.2.1.min.js' type="text/javascript"></script>
+<script src="js/script.min.js" type="text/javascript"></script>
+</body>
+</html>
+<!-- end html_close.html-->
