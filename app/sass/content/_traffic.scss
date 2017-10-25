@@ -1,0 +1,80 @@
+.traffic-table {
+  table {
+    min-width: 100%;
+    border-collapse: collapse;
+    width: max-content;
+    overflow: hidden;
+    border: 1px solid #d4d4d4;
+  }
+  th,td {
+    vertical-align: top;
+    padding: 3px 8px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  tr {
+    height: 30px;
+    border: 1px solid #d4d4d4;
+  }
+  th {
+    font-weight: 400;
+    background-color: #f2f2f2;
+    border: 1px solid #d4d4d4;
+  }
+  td {
+    border: 1px solid #d4d4d4;
+  }
+  thead {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  tbody {
+    tr {
+      background-color: #fff;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .city {
+    text-decoration: underline;
+    font-size: 18px;
+    display: block;
+  }
+  .direction {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .yellow-td {
+    background-color: #fdf1a4!important;
+  }
+
+
+  .tt-day {
+    width: 80px;
+  }
+  .tt-clock {
+    width: 50px;
+  }
+  .tt-car,
+  .tt-bus,
+  .tt-truck-type-sm,
+  .tt-truck-type-md,
+  .tt-truck-type-lg,
+  .tt-truck-type-xlg {
+    width: 200px;
+  }
+  .tt-unidentified {
+    width: 150px;
+  }
+  .tt-all {
+    text-align: left;
+    width: 300px;
+  }
+}
+

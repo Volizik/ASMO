@@ -33,12 +33,6 @@
   tbody {
     tr {
       background-color: #fff;
-      &:nth-of-type(2n+1) {
-        border-bottom: none;
-      }
-      &:nth-of-type(2n+2) {
-        border-top: none;
-      }
       img {
         width: 25px;
         height: 25px;
@@ -54,13 +48,40 @@
       font-size: 14px;
     }
   }
+  .arrow {
+    width: 15px;
+    padding: 0px 10px;
+  }
+  .block-img {
+    padding-right: 10px;
+  }
+  .city {
+    text-decoration: underline;
+    font-size: 18px;
+    display: block;
+  }
+  .direction {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .yellow-td {
+    background-color: #fdf1a4!important;
+  }
 
   &-review {
+    tbody tr {
+      &:nth-of-type(even) {
+        background-color: #f2f2f2;
+      }
+    }
     td {
-      border-top: none;
-      border-bottom: none;
       border-right: 1px solid #d4d4d4;
       border-left: 1px solid #d4d4d4;
+    }
+    .city {
+      color: #00447a;
     }
     .mr-pdk {
       width: 120px;
@@ -220,5 +241,56 @@
     .mf-fog {
       width: 140px;
     }
+  }
+  &-review-traffic {
+    td {
+      height: 60px;
+      img {
+        width: 30px;
+      }
+    }
+    td.mrt-pdk {
+      text-align: left;
+    }
+    .mrt-pdk {
+      width: 120px;
+    }
+    .mrt-name-location {
+      text-align: left;
+      width: 280px;
+    }
+    .mrt-chart {
+      width: 120px;
+    }
+    .mrt-photo-ico {
+      width: 60px;
+    }
+    .mrt-time {
+      width: 120px;
+    }
+    .mrt-speed,
+    .mrt-distance,
+    .mrt-fullness,
+    .mrt-amount,
+    .mrt-state {
+      width: 280px;
+    }
+    .direct,
+    .reverse {
+      width: 140px;
+    }
+    .mrt-ellipsis {
+      width: 150px;
+    }
+
+    .city {
+      color: green;
+    }
+    tbody {
+      .direct {
+        background-color: #f4fcf7;
+      }
+    }
+
   }
 }
