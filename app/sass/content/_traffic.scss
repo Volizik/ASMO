@@ -78,3 +78,145 @@
   }
 }
 
+.traffic-data {
+  >.content {
+    display: flex;
+  }
+  &__video {
+    width: 400px;
+    .video{
+      border: 1px solid #05aef0;
+      img {
+        width: 100%;
+      }
+      >div {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: #fff;
+        font-size: 22px;
+        background-color: #05aef0;
+        padding: 15px 5px;
+        box-sizing: border-box;
+        >span {
+          display: inline-block;
+          position: relative;
+          border-left: 20px solid #fff;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          margin: 0 20px;
+        }
+        ul {
+          padding-left: 15px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          li {
+            list-style: none;
+            height: 8px;
+            width: 8px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            a {
+              background-color: #878787;
+              height: 100%;
+              width: 100%;
+              display: block;
+            }
+          }
+          .active {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    .cars-type {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      margin-top: 20px;
+      >div {
+        text-align: center;
+        p {
+          font-size: 20px;
+          color: #878787;
+          font-weight: 400;
+        }
+        span {
+          color: #fff;
+          padding: 10px;
+          font-size: 18px;
+          box-sizing: border-box;
+          &:first-of-type {
+            border-right: 1px solid #05aef0;
+          }
+        }
+      }
+    }
+  }
+  &__statistics {
+    width: 400px;
+    margin:  0 auto;
+  }
+  &--block {
+    display: flex;
+    >div {
+      position: relative;
+      padding: 0px 30px;
+      box-sizing: border-box;
+      &:first-of-type {
+        &:before {
+          content: '';
+          position: absolute;
+          right: 0;
+          height: 70%;
+          width: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #05aef0;
+        }
+      }
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      font-size: 26px;
+      color: #fff;
+      padding: 5px 0;
+    }
+    p {
+      color: #f2f2f2;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    b {
+      display: block;
+      text-align: center;
+      font-size: 26px;
+      color: #fff;
+      padding: 10px 0;
+      margin: 5px 0;
+      border: 2px solid #fff;
+    }
+  }
+  &--review {
+    padding: 20px 40px;
+    margin: 0;
+    box-sizing: border-box;
+    li {
+      color: #f2f2f2;
+      list-style: none;
+      padding: 5px 0;
+      span {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
