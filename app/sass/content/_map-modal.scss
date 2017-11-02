@@ -1,0 +1,206 @@
+.map {
+  &__modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #23263e;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 20px solid #23263e;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+    &--header {
+      span {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 700;
+        padding-left: 50px;
+        margin: 10px 0;
+      }
+    }
+    &--blocks {
+      display: flex;
+    }
+    &--block {
+      width: 300px;
+      padding: 5px;
+      box-sizing: border-box;
+      border-right: 3px solid #2f7ba5;
+      &:last-of-type {
+        border: none;
+      }
+    }
+    &--video {
+      .video{
+        border: 1px solid #05aef0;
+        img {
+          width: 100%;
+        }
+        >div {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          background-color: #05aef0;
+          padding: 15px 5px;
+          box-sizing: border-box;
+          b {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          >span {
+            display: inline-block;
+            position: relative;
+            border-left: 12px solid #fff;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            margin: 0 10px;
+          }
+          ul {
+            padding-left: 10px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            li {
+              list-style: none;
+              height: 8px;
+              width: 8px;
+              overflow: hidden;
+              border-radius: 50%;
+              margin-right: 8px;
+              border: 1px solid #fff;
+              box-sizing: border-box;
+              a {
+                background-color: #878787;
+                height: 100%;
+                width: 100%;
+                display: block;
+              }
+            }
+            .active {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+      .cars-type {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-top: 20px;
+        >div {
+          text-align: center;
+          p {
+            font-size: 16px;
+            color: #878787;
+            font-weight: 400;
+          }
+          span {
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            box-sizing: border-box;
+            &:first-of-type {
+              border-right: 1px solid #05aef0;
+            }
+          }
+        }
+      }
+    }
+    &--center-top {
+      background: url(../img/map-modal-bg.png) center center no-repeat;
+      background-size: cover;
+      box-shadow: 4px 4px 10px #000;
+      .map-star {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+      table {
+        width: 100%;
+        color: #23263e;
+        font-weight: 700;
+        td {
+          width: 28%;
+          padding: 5px 0;
+          &:first-of-type {
+            color: #777;
+            width: 44%;
+          }
+        }
+        thead {
+          font-size: 20px;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+        }
+      }
+    }
+    &--center-bottom {
+      padding: 15px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      background: url(../img/road-string.png) center center no-repeat;
+      table {
+        width: 100%;
+        td {
+          padding: 5px 0;
+          color: #777;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+    &--forecast {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      table {
+        width: 100%;
+        padding-top: 10px;
+        border-top: 2px solid #777;
+        img {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+        }
+        td {
+          text-align: center;
+          padding: 5px 0;
+          &:first-of-type{
+            width: 60px;
+          }
+        }
+      }
+    }
+    &--review {
+      padding: 20px 40px;
+      margin: 0;
+      box-sizing: border-box;
+      li {
+        color: #f2f2f2;
+        list-style: none;
+        padding: 5px 0;
+        span {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

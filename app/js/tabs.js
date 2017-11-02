@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        $(document).on('click', '.tablinks a', function () {
+        $(document).on('click', '.tablinks a', function (e) {
+            e.preventDefault();
             var itemId = $(this).attr('href');
             var activeTab = $(itemId);
-            console.log(itemId)
             $('.tabcontent').hide();
             activeTab.show();
             $('.tablinks a').removeClass('active');
