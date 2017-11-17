@@ -40,6 +40,10 @@ input[type="checkbox"]:checked + span:before {
   &:hover {
     color: #ffff00;
   }
+  img {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .filter {
