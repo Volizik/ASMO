@@ -24,29 +24,29 @@
   &__actions {
     display: flex;
     height: 100%;
-    button {
-      padding: 0px 25px;
-      position: relative;
-      display: inline-flex;
-      height: 100%;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #8c1713;
-      color: #fff;
-      border: 1px solid transparent;
+  }
+  &__btn {
+    padding: 0px 25px;
+    position: relative;
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8c1713;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
       transition: .3s;
-      box-sizing: border-box;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.1);
-        transition: .3s;
-        border: 1px solid #fff;
-        z-index: 2;
-      }
-      span {
-        font-size: 18px;
-        padding-left: 10px;
-      }
+      border: 1px solid #fff;
+      z-index: 2;
+    }
+    span {
+      font-size: 18px;
+      padding-left: 10px;
     }
   }
   &__time {
