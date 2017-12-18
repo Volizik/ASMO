@@ -56,7 +56,7 @@
         <span>A151 км 35+700 Шихазаны</span>
     </div>
     <div class="s-header__side">
-        <button class="btn"><img src="" alt=""></button>
+        <button class="btn"><img src="img/icons/calculator.png" alt=""></button>
         <button class="btn">Архив</button>
         <button class="btn">Текущие</button>
         <button class="btn">Прогноз</button>
@@ -107,25 +107,69 @@
 
             </div>
         </div>
-        <div class="traffic-data__statistics">
-            <div class="traffic-data--block">
-                <div>
-                    <h3 class="bg-green">1.1</h3>
-                    <p>Средняя скорость движения, км./час<b>87</b></p>
-                    <p>Объем движения, авт./сутки<b>204</b></p>
-                </div>
-                <div>
-                    <h3 class="bg-yellow">2.1</h3>
-                    <p>Средняя скорость движения, км./час<b>90</b></p>
-                    <p>Объем движения, авт./сутки<b>106</b></p>
-                </div>
+        <div class="traffic-data__block">
+            <div class="traffic-data__table--air">
+                <table class="traffic-data__table">
+                    <thead>
+                    <tr>
+                        <th><span class="big-t">t<sup>0</sup></span> воздуха</th>
+                        <th><img src="img/icons/snow-icon.png" alt="" width="35px" height="35px"></th>
+                        <th>-5<sup>o</sup>C</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Влажность</td>
+                        <td></td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>Давление</td>
+                        <td></td>
+                        <td>757</td>
+                    </tr>
+                    <tr>
+                        <td>Тип осадков</td>
+                        <td></td>
+                        <td>1,01 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Скорость ветра</td>
+                        <td><img src="img/icons/arrow-up-right.png" alt="" width="29px" height="22px"></td>
+                        <td>4.3 м/с</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <img class="road-string" src="img/road-string2.png" alt="" width="115px" height="128px">
             </div>
-            <ul class="traffic-data--review">
-                <li><span class="bg-red"></span>Остановки в движении</li>
-                <li><span class="bg-yellow"></span>Медленное движение</li>
-                <li><span class="bg-green"></span>Бесперебойное движение</li>
-                <li><span class="bg-grey"></span>Нет данных</li>
-            </ul>
+            <div class="traffic-data__table--surface">
+                <table class="traffic-data__table">
+                    <thead>
+                    <tr>
+                        <th><span class="big-t">t<sup>0</sup></span> поверхности</th>
+                        <th>-3<sup>o</sup>C</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Состояние</td>
+                        <td>Мокро</td>
+                    </tr>
+                    <tr>
+                        <td>Скользкость</td>
+                        <td>757</td>
+                    </tr>
+                    <tr>
+                        <td>Сумма осадков</td>
+                        <td>1,01 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Сцепление</td>
+                        <td>4.3 м/с</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </section>
