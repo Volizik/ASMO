@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $('.modal__slider').slick({
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
-        arrows: false,
+        arrows: true
     });
 
 });
